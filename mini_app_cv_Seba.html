@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mis Proyectos – Mini CV</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #1f1f1f;
+      color: #e0e0e0;
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      color: #d0d0d0;
+    }
+    .pregunta {
+      margin: 30px 0;
+    }
+    button {
+      margin: 8px;
+      padding: 10px 20px;
+      background-color: #444;
+      color: #f0f0f0;
+      border: 1px solid #666;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    #respuesta {
+      margin-top: 30px;
+      font-size: 16px;
+      white-space: pre-line;
+      color: #cccccc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>💼 Mi CV hecho con HTML & JavaScript</h1>
+
+  <div class="pregunta">
+    <p>¿Querés ver mi CV?</p>
+    <button onclick="mostrarCV()">Sí</button>
+  </div>
+
+  <div class="pregunta">
+    <p>¿Querés mandarme un mail?</p>
+    <button onclick="mostrarMail()">Sí</button>
+    <button onclick="mostrarGracias()">No</button>
+  </div>
+
+  <div id="respuesta"></div>
+
+  <script>
+    function mostrarCV() {
+      const texto = 
+`Currículum Vitae – Sebastian 
+📍 Ubicación: [CABA]
+
+Perfil Profesional
+Autodidacta, resolutivo y en constante formación. Tengo experiencia práctica usando sistemas Linux, terminal, scripts y herramientas de software libre. Me interesa el desarrollo web (HTML, CSS, JS en curso), el soporte técnico y el testing manual. Busco mi primera oportunidad en IT en áreas como help desk, soporte técnico, testing o frontend trainee.
+
+Conocimientos y Habilidades
+
+Sistemas Operativos
+- Manejo avanzado de Ubuntu, Zorin OS y distribuciones Linux orientadas al escritorio.
+- Configuración de sistema, actualización de kernel, gestión de permisos, creación de scripts .sh.
+- Uso fluido de la terminal Bash y entorno gráfico (GUI).
+
+Software Libre y Herramientas
+- Visual Studio Code
+- GIMP (edición gráfica básica)
+- Audacity (edición de audio)
+- Ubuntu Builder y Qt5 Designer (modificación y creación de apps gráficas)
+
+Programación y Desarrollo Web
+- HTML, CSS, JavaScript (nivel básico – en curso)
+- Conocimientos de estructura web, lógica de scripts, pruebas, modificación de código.
+
+Ofimática
+- Microsoft Word y Excel (nivel básico)
+- Manejo de tablas, edición y formato de celdas
+- Uso diario en entornos laborales (control de caja, registros simples).
+
+Técnico General
+- Desbloqueo de celulares usando ADB y otras herramientas
+- Conocimientos básicos de redes
+- Capacidad autodidacta para investigar, instalar y probar software
+
+Áreas de Interés Profesional
+- Soporte técnico Linux / PC
+- Mesa de ayuda IT (Helpdesk)
+- Tester manual (QA)
+- Asistente web
+- Trainee Frontend (HTML, CSS, JavaScript)
+
+Actitud y Valores
+- Perfil autodidacta, persistente y con enfoque en soluciones.
+- Capacidad real de resolver problemas y aprender desde la práctica.
+- Alta tolerancia a la frustración y deseo de crecer profesionalmente en IT.
+
+Intereses
+Arte digital, dibujo, grabación de música, diseño multimedia con herramientas libres.`;
+
+      document.getElementById("respuesta").innerText = texto;
+    }
+
+    function mostrarMail() {
+      document.getElementById("respuesta").innerText = "📧 sebasebasemexpiex@gmail.com";
+    }
+
+    function mostrarGracias() {
+      document.getElementById("respuesta").innerText = "¡Gracias por tu tiempo!";
+    }
+  </script>
+
+</body>
+</html>
