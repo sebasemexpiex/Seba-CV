@@ -1,4 +1,4 @@
-﻿# CV online - usando HTML y jAVASCRIPT
+﻿# CV online - usando HTML y JAVASCRIPT
 
 Este es un proyecto personal que integra una interfaz web sencilla con mi CV informatico.
 
@@ -24,3 +24,4 @@ MIT – Libre de usar y modificar, pero agradezco atribución si reutilizás par
 
 
 **Zeba** (Sebastián) – Artista autodidacta y explorador de la intersección entre arte, tecnología y libertad.
+
